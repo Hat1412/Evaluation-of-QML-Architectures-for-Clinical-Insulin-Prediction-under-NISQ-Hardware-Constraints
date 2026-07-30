@@ -1,0 +1,74 @@
+[
+  {
+    "n_components": 2,
+    "variance_retained": 0.4758,
+    "Logistic Regression_F1": 0.6667,
+    "SVM-RBF_F1": 0.72,
+    "Random Forest_F1": 0.6667,
+    "Gradient Boosting_F1": 0.6364,
+    "XGBoost_F1": 0.72,
+    "LightGBM_F1": 0.72,
+    "QSVC-ZZKernel_F1": 0.6667,
+    "QSVC-PauliKernel_F1": 0.6957
+  },
+  {
+    "n_components": 4,
+    "variance_retained": 0.7276,
+    "Logistic Regression_F1": 0.72,
+    "SVM-RBF_F1": 0.7692,
+    "Random Forest_F1": 0.7692,
+    "Gradient Boosting_F1": 0.7692,
+    "XGBoost_F1": 0.72,
+    "LightGBM_F1": 0.75,
+    "QSVC-ZZKernel_F1": 0.7619,
+    "QSVC-PauliKernel_F1": 0.3158
+  },
+  {
+    "n_components": 6,
+    "variance_retained": 0.8676,
+    "Logistic Regression_F1": 0.75,
+    "SVM-RBF_F1": 0.7692,
+    "Random Forest_F1": 0.72,
+    "Gradient Boosting_F1": 0.64,
+    "XGBoost_F1": 0.7692,
+    "LightGBM_F1": 0.7273,
+    "QSVC-ZZKernel_F1": 0.75,
+    "QSVC-PauliKernel_F1": 0.6
+  },
+  {
+    "n_components": 8,
+    "variance_retained": 0.9463,
+    "Logistic Regression_F1": 0.7273,
+    "SVM-RBF_F1": 0.8333,
+    "Random Forest_F1": 0.72,
+    "Gradient Boosting_F1": 0.6957,
+    "XGBoost_F1": 0.6957,
+    "LightGBM_F1": 0.8182,
+    "QSVC-ZZKernel_F1": 0.5882,
+    "QSVC-PauliKernel_F1": 0.4211
+  },
+  {
+    "n_components": 10,
+    "variance_retained": 0.9935,
+    "Logistic Regression_F1": 0.8182,
+    "SVM-RBF_F1": 0.8333,
+    "Random Forest_F1": 0.8,
+    "Gradient Boosting_F1": 0.8462,
+    "XGBoost_F1": 0.72,
+    "LightGBM_F1": 0.8182,
+    "QSVC-ZZKernel_F1": null,
+    "QSVC-PauliKernel_F1": null
+  },
+  {
+    "n_components": 11,
+    "variance_retained": 1.0,
+    "Logistic Regression_F1": 0.8182,
+    "SVM-RBF_F1": 0.8333,
+    "Random Forest_F1": 0.8333,
+    "Gradient Boosting_F1": 0.7826,
+    "XGBoost_F1": 0.7692,
+    "LightGBM_F1": 0.8182,
+    "QSVC-ZZKernel_F1": null,
+    "QSVC-PauliKernel_F1": null
+  }
+]
