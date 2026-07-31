@@ -63,12 +63,6 @@ environment variable before running:
 export IBM_QUANTUM_TOKEN="your_token_here"
 python3 quantum_diabetes_hardware_SANITIZED.py
 ```
-
-If you are the original repository owner: the credential previously hardcoded in an
-earlier version of this file has been removed from this script, but you should still
-rotate/revoke that token in your IBM Quantum account if you have not already, since
-it may exist in your local file history or any previously pushed commit.
-
 ## Supplementary analyses
 
 - `pca_sensitivity_FINAL.py` / `pca_sensitivity_results_FROZEN.json` --
@@ -79,14 +73,6 @@ it may exist in your local file history or any previously pushed commit.
 - `vqc_reproducibility_check_FINAL.py` / `vqc_reproducibility_FROZEN.json` --
   characterizes VQC-Paper and VQC-HEA F1 variability across 5 independent training
   runs on the identical data partition (Manuscript Section 3.2.1, Table S3, Figure 8).
-
-## Superseded files (kept for audit trail only)
-
-`main.py` (original, leaky, 12-feature miscount) and `analysis_v2_leakage_free_FINAL.py`
-(leakage-fixed, but ran on data with the 3 uncorrected data-entry errors), and their
-associated result files (`corrected_results.json`, `pca_sensitivity.py`,
-`pca_sensitivity_results.json`). Do not use these for any number reported in the
-manuscript -- `analysis_v4_FINAL.py` is the sole canonical source.
 
 ## Reproducing the reported results
 
