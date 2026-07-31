@@ -15,8 +15,16 @@ Three corrections are included, in order of discovery:
 1. **Leakage fix:** SMOTE, feature scaling, and PCA are fit exclusively on training
    data — splitting first, then resampling only the training partition, and
    re-fitting all three independently inside each cross-validation fold.
+2. **Data correction (not exclusion):** three values inconsistent with the rest of
+   their feature distributions, all consistent with decimal-point transcription
+   errors, were corrected prior to any modelling:
+   - Patient 240619190: WEIGHT 6 kg -> corrected to 60 kg
+   - Patient 240621190: WEIGHT 699 kg -> corrected to 69.9 kg
+   - Patient 240701234: FBS 1993 mg/dL -> corrected to 199.3 mg/dL
 
-2. **VQC reproducibility fix (partial):** `qiskit-machine-learning`'s VQC draws its
+   No records are excluded. All 100 original patients are retained in every
+   analysis reported in the manuscript.
+3. **VQC reproducibility fix (partial):** `qiskit-machine-learning`'s VQC draws its
    random initial parameter vector from `qiskit_algorithms.utils.algorithm_globals.random`
    -- a separate RNG from numpy's global state that defaults to unseeded,
    system-entropy-initialised behaviour. This was the primary source of large
